@@ -1,0 +1,572 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffdf6;
+  font-family: sans-serif;
+  color: #3c2323;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+}
+
+.company {
+  margin-left: 2.5rem;
+}
+
+.company p {
+  font-size: 1.1rem;
+}
+
+.company > .logo {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: .6px;
+  line-height: 1.4;
+}
+
+nav {
+  margin-right: 2.2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+nav ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  margin: 3px 9px;
+  margin-bottom: -2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  letter-spacing: .2px;
+  font-weight: 800;
+  -webkit-transition: color .1s ease-in-out;
+  transition: color .1s ease-in-out;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  color: #20603C;
+}
+
+.hero {
+  margin-top: 1.2rem;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "content img";
+}
+
+.hero > .content {
+  background: #20603C;
+  padding: 5rem 1.8rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+.hero .content {
+  color: #fffefb;
+}
+
+.hero .content .title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: .6px;
+  line-height: 1.2;
+  margin-right: 1.2rem;
+}
+
+.hero .content .subtitle {
+  margin: 1.6rem 2rem 1.6rem auto;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: .8px;
+  font-weight: 500;
+}
+
+.hero .content button {
+  font-family: inherit;
+  background: #20603C;
+  border: 2px solid #fffefb;
+  border-radius: 6px;
+  padding: .6rem .8rem;
+  color: inherit;
+  font-weight: 800;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+}
+
+.hero .content button:hover {
+  background: #153f27;
+}
+
+.hero > .imgcontainer {
+  background: url(../imgs/1.jpg);
+  background-size: cover;
+  background-color: #20603C;
+  min-height: 300px;
+  min-width: 50vw;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+}
+
+.info {
+  margin: 2rem;
+}
+
+.info > h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: .6px;
+  margin-bottom: .4rem;
+}
+
+.underline {
+  text-align: center;
+  width: 90px;
+  height: 2.6px;
+  background: black;
+  margin: 0 auto;
+}
+
+.article-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.article-container .card {
+  width: 300px;
+}
+
+.article-container .card figure {
+  width: 300px;
+  height: 200px;
+  background-color: wheat;
+}
+
+.article-container .card figure img {
+  background-origin: center center;
+}
+
+.article-container .card .details {
+  padding: 2rem 0;
+  font-size: 1.1rem;
+  letter-spacing: .6px;
+  font-weight: 600;
+}
+
+.stats {
+  background-color: rgba(63, 26, 0, 0.38);
+  background-image: url(../imgs/3.jpg);
+  background-size: cover;
+  background-origin: center;
+  background-position-y: -15rem;
+  background-blend-mode: darken;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: white;
+  text-align: center;
+  letter-spacing: .6px;
+}
+
+.stats .subtitle {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.stats .title {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.stats .content {
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.stats .content .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.stats .content .item p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.stats .content .item .big {
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+
+.quality {
+  color: #3c2323;
+}
+
+.quality .content {
+  color: inherit;
+}
+
+.quality .container {
+  max-width: 800px;
+  margin: 3rem auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img2 con2";
+  gap: 3rem;
+}
+
+.container .imgcontainer {
+  background-color: #3c2323;
+  background-image: url(../imgs/4.jpg);
+  background-size: cover;
+  min-height: 250px;
+  min-width: 400px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img2;
+}
+
+.container .content {
+  margin: 2rem 0;
+  letter-spacing: .8px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: con2;
+}
+
+.container .content .title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.container .content .details {
+  margin: 2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.container .content ul {
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.testimonials {
+  max-width: 1000px;
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.testimonials {
+  letter-spacing: .6px;
+}
+
+.testimonials .item {
+  width: 300px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.testimonials .item .highlight {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1.2rem 0;
+}
+
+.testimonials .item .experience {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.testimonials .item strong {
+  line-height: 1.5;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.ratings-container .star {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  margin: 3px;
+  background-color: #3c232359;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.ratings-container .star.filled {
+  background-color: #3c2323;
+}
+
+.recipes {
+  background-color: #887158;
+  color: #fffefb;
+  padding: 4rem 3rem 2rem 3rem;
+  text-align: center;
+  letter-spacing: .8px;
+}
+
+.recipes .subtitle {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.recipes .title {
+  margin: 1.5rem;
+  font-size: 2.1rem;
+  font-weight: 800;
+}
+
+.recipes .underline {
+  background-color: white;
+  height: 1.2px;
+}
+
+.recipes .recipe-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-container article {
+  width: 320px;
+  margin: 1rem .5rem;
+}
+
+.recipe-container p {
+  letter-spacing: .6px;
+}
+
+.recipe-container .title {
+  margin: 0;
+  line-height: 1.2;
+  color: #361f1f;
+}
+
+.recipe-container .date {
+  font-size: 1.1rem;
+}
+
+.recipe-container .details {
+  margin: 1.5rem 0 2rem;
+  line-height: 1.4;
+  font-size: 1.08rem;
+}
+
+.recipe-container a.link {
+  color: inherit;
+}
+
+.recipes button {
+  font-family: inherit;
+  background-color: #887158;
+  border: 2px solid #fffefb;
+  border-radius: 6px;
+  padding: .6rem .8rem;
+  color: inherit;
+  font-weight: 800;
+  font-size: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+}
+
+.recipes button:hover {
+  background: #3a3025;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 3rem;
+}
+
+footer .copyright {
+  font-size: 1.4rem;
+}
+
+footer .copyright .highlight {
+  text-decoration: none;
+  color: #007777;
+}
+
+footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 8px;
+}
+
+footer ul li a {
+  color: #153f27;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: .6px;
+}
+
+@media screen and (max-width: 750px) {
+  .company {
+    margin-left: 1.5rem;
+    width: 40vw;
+  }
+  .company p {
+    font-size: 1rem;
+  }
+  .company > .logo {
+    font-size: 1.4rem;
+    letter-spacing: .6px;
+    line-height: 1.4;
+  }
+  nav {
+    width: 40vw;
+    margin-right: 1.2rem;
+    margin-bottom: -30px;
+  }
+  nav ul {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  nav ul li {
+    margin: 1px;
+  }
+  .hero {
+        grid-template-areas: "img " "content";
+  }
+  .hero .content {
+    padding: 2rem 1.5rem;
+  }
+  .quality .container {
+    gap: 0;
+        grid-template-areas: "img2" "con2";
+  }
+  .quality .content {
+    width: 90vw;
+    margin: .5rem auto;
+    text-align: left;
+  }
+  .quality .content ul {
+    text-align: left;
+    margin-left: 2rem;
+  }
+  .stats {
+    background-position-y: 0;
+  }
+  .stats .title {
+    font-size: 2.2rem;
+  }
+  .stats .content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .stats .content .item {
+    margin: 1rem;
+  }
+  .stats .content .item .big {
+    font-size: 2.4rem;
+  }
+  .recipes {
+    padding: 2rem .8rem;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer * {
+    line-height: 1.6;
+  }
+}
+/*# sourceMappingURL=main.css.map */
