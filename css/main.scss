@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -418,7 +419,6 @@ footer{
 
 @media screen and (max-width: 750px) {
 
-    
     .company{
         margin-left: 1.5rem;
         width: 40vw;
@@ -427,13 +427,11 @@ footer{
             font-size: 1rem;
         }
     }
-
     .company > .logo {
         font-size: 1.4rem;
         letter-spacing: .6px;
         line-height: 1.4;
     }
-
     nav{
         width: 40vw;
         margin-right: 1.2rem;
@@ -447,7 +445,6 @@ footer{
             }
         }   
     }
-
     .hero{
       grid-template-areas: "img "
       "content";
@@ -455,12 +452,15 @@ footer{
           padding: 2rem 1.5rem;
       }
     }
-    
 .quality{
     .container{
         gap: 0;
         grid-template-areas: "img2"
         "con2";
+        .imgcontainer{
+            min-width: 0;
+            max-width: 96vw;
+        }
     }
 
     .content{
@@ -473,8 +473,7 @@ footer{
         }
     }
 }
-
-
+ 
 .stats{
     background-position-y: 0;
 

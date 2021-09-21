@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -525,6 +526,10 @@ footer ul li a {
   .quality .container {
     gap: 0;
         grid-template-areas: "img2" "con2";
+  }
+  .quality .container .imgcontainer {
+    min-width: 0;
+    max-width: 96vw;
   }
   .quality .content {
     width: 90vw;
